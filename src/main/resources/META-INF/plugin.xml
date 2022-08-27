@@ -1,0 +1,34 @@
+<idea-plugin>
+  <id>github.com/rasel-mahmud-dev/my-first-jetbrains-theme</id>
+  <name>My Theme</name>
+  <version>1.0</version>
+  <vendor email="rasel.mahmud.dev@gmail.com" url="https://rasel-portfolio.vercel.app">Rasel Mahmud</vendor>
+
+  <description><![CDATA[
+      A dark theme for JetBrains IDEs. It enjoy me coding.
+    ]]></description>
+
+  <change-notes><![CDATA[
+
+    <b>1.0</b>
+    <ul>
+        <li>Initial release</li>
+    </ul>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="191.0"/>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <themeProvider id="https://github.com/rasel-mahmud-dev/my-first-jetbrains-theme" path="/theme/mytheme.theme.json"/>
+    <bundledColorScheme path="/theme/theme"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+  <depends>com.intellij.modules.lang</depends>
+</idea-plugin>
